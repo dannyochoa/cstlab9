@@ -11,6 +11,7 @@
     <input type="radio" name="question2" id="q2-3"  Value="C"/><label for='q2-3'>Monte Rey <br />
     <div id="question2-feedback" class="answer"></div><br />
     
+    
      What year is it?
     <input type="text" name="question3" size="5" /><br />
     <div id="question3-feedback" class="answer"></div><br />
@@ -26,4 +27,4 @@
 </form>
 
 <!--Will display the quiz score-->
-<div id="scores"></div>
+<div id="scores"></div> 
