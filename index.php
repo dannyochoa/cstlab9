@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-
-
 function displayQuiz(){
     if(isset($_SESSION['username'])){
         include 'quiz.php';

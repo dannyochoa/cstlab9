@@ -16,7 +16,6 @@ $(document).ready(function(){
         var answer3 = $("input[name='question3']").val().trim();
         var answer4 = $("#question4").val();
         
-        console.log("asda");
         //Checks if answers are correct
         // Question 1
         if(answer1 == "1994"){
@@ -53,13 +52,8 @@ $(document).ready(function(){
         $("#question4-feedback").append("The answer is <strong>CST336</strong>");
         //Displays quiz score
         
-        
-        
-        
-        
-        
+
         $("#score").html(score);
-        alert(score);
         $("#waiting").html("<img src='img/loading.gif' alt='submitting data' />");
         $("input[type='submit']").css("display","none");
 
@@ -77,7 +71,6 @@ $(document).ready(function(){
                 $("input[type='submit']").css("display","");
             },
             complete: function(data,status) { //optional, used for debugging purposes
-              // alert(status);
             }
 
         });//AJAX
