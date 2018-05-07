@@ -14,7 +14,7 @@ $(document).ready(function(){
         var answer1 = $("input[name='question1']").val().trim();
         var answer2 = $("input[name='question2']:checked").val();
         var answer3 = $("input[name='question3']").val().trim();
-        var answer4 = $("input[name='question4']").val().trim();
+        var answer4 = $("#question4").val();
         
         console.log(answer1);
         console.log(answer2);

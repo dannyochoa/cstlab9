@@ -27,4 +27,4 @@
 </form>
 
 <!--Will display the quiz score-->
-<div id="scores"></div> 
+<div id="scores"></div>
