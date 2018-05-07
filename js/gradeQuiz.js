@@ -14,7 +14,7 @@ $(document).ready(function(){
         var answer1 = $("input[name='question1']").val().trim();
         var answer2 = $("input[name='question2']:checked").val();
         var answer3 = $("input[name='question3']").val().trim();
-        var answer4 = $("#question4").val();
+        var answer4 = $("input[name='question4']").val().trim();
         
         console.log(answer1);
         console.log(answer2);
@@ -54,7 +54,7 @@ $(document).ready(function(){
         else{
             incorrectAnswer($("#question4-feedback"));
         }
-        $("#question4-feedback").append("The answer is <strong>CST335</strong>");
+        $("#question4-feedback").append("The answer is <strong>CST336</strong>");
         //Displays quiz score
         
         
