@@ -17,7 +17,7 @@
     <div id="question3-feedback" class="answer"></div><br />
     
      What is class is this?
-    <input type="text" id="question4" size="5" /><br />
+    <input type="text" name="question4" size="5" /><br />
     <div id="question4-feedback" class="answer"></div><br />
 
     <input type="submit" value="Submit" />

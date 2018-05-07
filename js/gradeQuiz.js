@@ -1,7 +1,7 @@
 $(document).ready(function(){
     
     $("#logoutBtn").click( function() {
-        window.location.href="login.php";
+        window.location.href="logout.php";
         }
     );
     
@@ -16,11 +16,7 @@ $(document).ready(function(){
         var answer3 = $("input[name='question3']").val().trim();
         var answer4 = $("#question4").val();
         
-        console.log(answer1);
-        console.log(answer2);
-        console.log(answer3);
-        console.log(answer4);
-        
+        console.log("asda");
         //Checks if answers are correct
         // Question 1
         if(answer1 == "1994"){
@@ -63,6 +59,7 @@ $(document).ready(function(){
         
         
         $("#score").html(score);
+        alert(score);
         $("#waiting").html("<img src='img/loading.gif' alt='submitting data' />");
         $("input[type='submit']").css("display","none");
 
@@ -71,15 +68,13 @@ $(document).ready(function(){
             type : "post",
             url  : "submitScores.php",            
             dataType : "json",
-            data : {"score" :score },            
+            data : {"score" : score},            
             success : function(data){
-                // console.log(data);
                 $("#times").html(data.times);
                 $("#average").html(data.average);
                 $("#feedback").css("display","block");
                 $("#waiting").html("");
                 $("input[type='submit']").css("display","");
-                
             },
             complete: function(data,status) { //optional, used for debugging purposes
               // alert(status);
